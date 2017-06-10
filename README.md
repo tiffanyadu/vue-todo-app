@@ -1,2 +1,2 @@
-# vue-bulletin-board
-This is a bulletin board application created with Vue.js.
+# vue-todo-app
+Getting familiar with Vue.js by building a good old to-do app!
