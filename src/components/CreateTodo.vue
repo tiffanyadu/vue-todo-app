@@ -34,7 +34,7 @@ export default {
     return {
       titleText: '',
       projectText: '',
-      isCreating: false,
+      isCreating: false
     };
   },
   methods: {
@@ -57,7 +57,7 @@ export default {
         this.projectText = '',
         this.isCreating = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>

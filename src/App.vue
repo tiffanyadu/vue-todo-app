@@ -13,7 +13,7 @@ export default {
   name: 'app',
   components: {
     TodoList,
-    CreateTodo,
+    CreateTodo
   },
   data() {
     return {
@@ -33,13 +33,13 @@ export default {
         title: 'Todo D',
         project: 'Project D',
         done: false,
-      }],
+      }]
     };
   },
   methods: {
     createTodo(newTodo) {
       this.todos.push(newTodo);
-    },
-  },
+    }
+  }
 };
 </script>
