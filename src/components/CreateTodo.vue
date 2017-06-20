@@ -16,14 +16,8 @@
                 <label>Category</label>
                 <input v-model="categoryText" type="text">
               </div>
-              <div class="ui buttons">
-                <button class="ui basic blue button" v-on:click="sendForm()">
-                  Create
-                </button>
-                <button class="ui basic red button" v-on:click="closeForm">
-                  Cancel
-                </button>
-              </div>
+              <button class="ui teal button" v-on:click="sendForm()">Create</button>
+              <button class="ui basic right floated red button" v-on:click="closeForm">Cancel</button>
             </div>
           </div>
         </div>
