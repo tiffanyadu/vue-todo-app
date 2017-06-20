@@ -4,7 +4,7 @@
     <p>Pending Tasks: {{todos.filter(todo => {return todo.done === false}).length}}</p>
     <div class="ui divider"></div>
     <div class="ui four column grid">
-      <todo v-on:delete-todo="deleteTodo" v-on:complete-todo="completeTodo" v-for="todo in todos" :key="todo.title" v-bind:todo="todo"></todo>
+      <todo v-on:delete-todo="deleteTodo" v-on:complete-todo="completeTodo" v-for="todo in todos" v-bind:todo="todo"></todo>
       <create-todo v-on:create-todo="createTodo"></create-todo>
     </div>
   </div>
