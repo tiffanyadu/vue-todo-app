@@ -16,20 +16,16 @@ export default {
   data() {
     return {
       todos: [{
-        title: 'Todo A',
-        project: 'Project A',
+        task: 'Get oil change',
+        category: 'Car Maintenance',
         done: false,
       }, {
-        title: 'Todo B',
-        project: 'Project B',
+        task: 'Take out trash',
+        category: 'Chores',
         done: true,
       }, {
-        title: 'Todo C',
-        project: 'Project C',
-        done: false,
-      }, {
-        title: 'Todo D',
-        project: 'Project D',
+        task: 'Pick up milk',
+        category: 'Groceries',
         done: false,
       }]
     };

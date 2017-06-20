@@ -3,10 +3,10 @@
     <div class="ui card">
       <div class="content" v-show="!isEditing">
         <div class="header">
-          {{ todo.title }}
+          {{ todo.task }}
         </div>
         <div class="meta">
-          {{ todo.project }}
+          {{ todo.category }}
         </div>
         <div class="extra content">
           <span class="right floated edit icon" v-on:click="showForm">
@@ -20,12 +20,12 @@
       <div class="content" v-show="isEditing">
         <div class="ui form">
           <div class="field">
-            <label>Title</label>
-            <input type="text" v-model="todo.title">
+            <label>Task</label>
+            <input type="text" v-model="todo.task">
           </div>
           <div class="field">
-            <label>Project</label>
-            <input type="text" v-model="todo.project">
+            <label>Category</label>
+            <input type="text" v-model="todo.category">
           </div>
           <div class="ui two button attached buttons">
             <button class="ui basic blue button" v-on:click="hideForm">
