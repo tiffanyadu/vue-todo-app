@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="ui container">
+    <h1 class="ui center aligned header">Vue.js Todo App</h1>
     <todo-list v-bind:todos="todos"></todo-list>
     <create-todo v-on:create-todo="createTodo"></create-todo>
   </div>

@@ -2,7 +2,10 @@
   <div>
     <p>Completed Tasks: {{todos.filter(todo => {return todo.done === true}).length}}</p>
     <p>Pending Tasks: {{todos.filter(todo => {return todo.done === false}).length}}</p>
-    <todo v-on:delete-todo="deleteTodo" v-on:complete-todo="completeTodo" v-for="todo in todos" :key="todo.title" v-bind:todo="todo"></todo>
+    <div class="ui divider"></div>
+    <div class="ui four column grid">
+        <todo v-on:delete-todo="deleteTodo" v-on:complete-todo="completeTodo" v-for="todo in todos" :key="todo.title" v-bind:todo="todo"></todo>
+    </div>
   </div>
 </template>
 
